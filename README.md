@@ -6,3 +6,10 @@ Data used: Loan Data Set from https://www.kaggle.com/datasets/burak3ergun/loan-d
 
 Goal:
 Explore, validate, and model credit risk in a loan dataset while demonstrating banking concepts and data governance practices.
+
+What is done:
+- Data quality analysis
+- Exploratory data analysis
+- Credit risk modelling
+- Logistic regression PD model
+- Expected loss estimation

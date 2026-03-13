@@ -15,10 +15,11 @@ What is done:
 - Expected loss estimation
 _______________________
 # Project Overview - Loan Risk Analysis Portfolio for Nordea – Quantitative Risk Analyst
-** Objective:**
+**Objective:**
 
-The purpose of this project is to analyze a dataset of loan applicants to understand the factors influencing loan approval and to develop a framework for assessing credit risk. In Notebook 1, the focus is on exploring the data and visualizing its distributions.
- In Notebook2, I do basic data preparation for model building
+The purpose of this project is to analyze a dataset of loan applicants to understand the factors influencing loan approval and to develop a framework for assessing credit risk. <br>
+In Notebook 1, the focus is on exploring the data and visualizing its distributions.
+In Notebook2, I do basic data preparation for model building
 In Notebook 3, I build predictive models and evaluate risk of a loaner.
 Dataset:
 The dataset contains 614 loan applications with features including ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, MaritalStatus, Gender, NumberOfDependents, Property_Area, and Loan_Status.

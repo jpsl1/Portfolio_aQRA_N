@@ -33,10 +33,8 @@ The project is divided into three stages:
 
 - Notebook 1: Understand the dataset and identify variables that influence loan approval.
      - Visualized Credit_History as the most indicatory feature in loan approval. Demonstrated the need for numeric feature winzarisation and logistic transformation.
-<br>
 - Notebook 2: Prepare features and the dataset for modeling to maximize predictive power.
      - Found key features for model.
-<br>
 - Notebook 3: Build and evaluate predictive models for loan approval and perform risk estimation.
      - The logistic regression / XGBoost model achieved an AUC of 0.85, indicating strong ability to distinguish between approved and rejected loan applicants.
 

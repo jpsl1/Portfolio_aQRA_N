@@ -4,9 +4,9 @@
 
 The purpose of this project is to analyze a dataset of loan applicants to understand the factors influencing loan approval and to develop a framework for assessing credit risk. <br>
 
-In **Notebook 1**, the focus is on exploring the data and visualizing its distributions.
-In **Notebook 2**, the focus is on basic data preparation for model building
-In **Notebook 3**, the focus is on predictive models and evaluate risk of a loaner.
+In **Notebook 1**, the focus is on exploring the data and visualizing its distributions. <br>
+In **Notebook 2**, the focus is on basic data preparation for model building <br>
+In **Notebook 3**, the focus is on predictive models and evaluate risk of a loaner. <br>
 
 **Dataset:**
 The dataset contains 614 loan applications with features including ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, MaritalStatus, Gender, NumberOfDependents, Property_Area, and Loan_Status.
@@ -33,8 +33,10 @@ The project is divided into three stages:
 
 Notebook 1: Understand the dataset and identify variables that influence loan approval.
 - Visualized Credit_History as the most indicatory feature in loan approval. Demonstrated the need for numeric feature winzarisation and logistic transformation.
+<br>
 Notebook 2: Prepare features and the dataset for modeling to maximize predictive power.
 - Found key features for model
+<br>
 Notebook 3: Build and evaluate predictive models for loan approval and perform risk estimation.
 - The logistic regression / XGBoost model achieved an AUC of 0.85, indicating strong ability to distinguish between approved and rejected loan applicants.
 

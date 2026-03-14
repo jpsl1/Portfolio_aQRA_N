@@ -1,5 +1,12 @@
 # Project Overview - Loan Risk Analysis Portfolio for Nordea – Quantitative Risk Analyst
 
+Project overview
+Dataset description
+Methodology
+Model results
+Key insights
+How to run the project
+
 **Objective:**
 
 The purpose of this project is to analyze a dataset of loan applicants to understand the factors influencing loan approval and to develop a framework for assessing credit risk. <br>

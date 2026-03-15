@@ -19,21 +19,21 @@ The dataset includes demographic and financial information, such as ApplicantInc
 
 # Project Pipeline
 Raw Dataset (614 applications)
-        ↓
+        |
 Data Cleaning & Missing Value Handling
-        ↓
+        |
 Exploratory Data Analysis
-        ↓
+        |
 Feature Engineering & Transformation
-        ↓
+        |
 Train/Test Split
-        ↓
+        |
 Model Training (Logistic Regression, XGBoost)
-        ↓
+        |
 Hyperparameter Tuning
-        ↓
+        |
 Model Evaluation
-        ↓
+        |
 Credit Risk Assessment (PD & Risk Segmentation)
 
 # Methodology
@@ -88,11 +88,11 @@ Credit Risk Assessment (PD & Risk Segmentation)
 - PD-based categories: Low, Medium, High Risk.
 
 - Confusion matrix indicates most safe applicants approved, high-risk applicants flagged or rejected.
-**| Risk Category | Number of Applicant | Average PD | Total Loan Amouny | Total Expected Loss |**
-|-------------------|---------------|----------------|-----------|-----------|-----------|
-| Low Risk     | 97 | 3.9 | 13548 | 287 |
-| Medium Risk   | 12 | 30.6 | 1617 | 225 |
-| High Risk   | 14 | 62.9 | 2384 | 739 |
+| Risk Category | Number of Applicants | Average PD (%) | Total Loan Amount | Total Expected Loss |
+|---------------|--------------------|----------------|-----------------|-------------------|
+| Low Risk      | 97                 | 3.9            | 13,548           | 287               |
+| Medium Risk   | 12                 | 30.6           | 1,617            | 225               |
+| High Risk     | 14                 | 62.9           | 2,384            | 739               |
 
 **Key Takeaways:**
 

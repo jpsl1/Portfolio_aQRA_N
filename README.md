@@ -89,10 +89,10 @@ Credit Risk Assessment (PD & Risk Segmentation)
 
 - Confusion matrix indicates most safe applicants approved, high-risk applicants flagged or rejected.
 | Risk Category | Number of Applicants | Average PD (%) | Total Loan Amount | Total Expected Loss |
-|¨-------------¨|¨------------------¨|¨ -------------¨|¨---------------¨|¨-----------------¨|
-| ¨Low Risk¨    | ¨97¨               | ¨3.9¨          | ¨13,548¨        | ¨287¨             |
-| ¨Medium Risk¨ | ¨12¨               | ¨30.6¨         | ¨1,617¨         | ¨225¨             |
-| ¨High Risk¨   | ¨14¨               | ¨62.9¨         | ¨2,384¨         | ¨739¨             |
+|:-------------:|:------------------:|:--------------:|:---------------:|:-----------------:|
+| :Low Risk:    | :97:               | :3.9:          | :13,548:        | :287:             |
+| :Medium Risk: | :12:               | :30.6:         | :1,617:         | :225:             |
+| :High Risk:   | :14:               | :62.9:         | :2,384:         | :739:             |
 
 **Key Takeaways:**
 

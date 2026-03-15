@@ -82,7 +82,15 @@ Credit Risk Assessment (PD & Risk Segmentation)
 - Logistic Regression (tuned) achieved AUC ≈ 0.85; interpretable and suitable for risk assessment.
 
 - XGBoost performed robustly but is less interpretable.
+- 
+**Key Takeaways:**
 
+- Preprocessing and tuning improve model stability.
+
+- Credit_History, financial ratios, property area and coapplicant presence are strong predictors.
+
+- Logistic Regression offers a transparent, actionable framework for credit risk decisions.
+  
 **Risk Segmentation:**
 
 - PD-based categories: Low, Medium, High Risk.
@@ -90,6 +98,7 @@ Credit Risk Assessment (PD & Risk Segmentation)
 - Confusion matrix indicates most safe applicants approved, high-risk applicants flagged or rejected.
 
 **Number of Applicant per Risk Category, Average PD of Applicants, Total Loan amount, and Expected Loss predicted by build model:**
+
 - **Low Risk**
    - Number of Applicants: 97
    - Average PD (%): 3.9
@@ -108,19 +117,9 @@ Credit Risk Assessment (PD & Risk Segmentation)
    - Total Loan Amount: 2,384
    - Total Expected Loss: 739             
 
-**Key Takeaways:**
-
-- Preprocessing, feature engineering, and tuning improve model stability.
-
-- Credit_History, financial ratios, and coapplicant presence are strong predictors.
-
-- Logistic Regression offers a transparent, actionable framework for credit risk decisions.
-
 **Key Insights**
 
 - Borrower financial capacity and credit history are the strongest predictors of loan approval.
-
-- Derived ratios like DTI and Debt_Ratio provide meaningful risk signals.
 
 - Preprocessing improves interpretability and model performance for linear models.
 
@@ -135,3 +134,20 @@ Dataset is small (614 observations), so results may not generalize broadly. Anal
 # Intended Use
 
 This portfolio demonstrates quantitative risk analysis workflow: from cleaning and exploration, to feature engineering, predictive modeling, and PD-based risk assessment. It is suitable for showcasing skills relevant to a Junior Quantitative Risk Analyst role.
+
+# References used in portfolio
+
+Articles by Muhammad Faizin Zen:
+
+- Building a Credit Score Model: Understanding the Business Context and Dataset (Feb 2025)  
+- Building a Credit Score Model: Handling Missing Values and Outliers (Feb 2025)
+- Building a Credit Score Model: Feature Engineering and Encoding (Feb 2025)  
+- Building a Credit Score Model: Feature Selection (Feb 2025)
+-  Building a Credit Score Model: Model Selection, Training, and Evaluation (Feb 2025)
+- Building a Credit Score Model: Hyperparameter Tuning for an Optimized Credit Scoring Model (Feb 2025)
+- 
+Example on Kaggle by Louis Deconinck
+- Credit Risk Modelling: Probability of Default (2023)
+
+  LGD estimation taken from
+-  (Basel II Glossary, 2013: https://web.archive.org/web/20130421005422/http://www.basel-ii-risk.com/Basel-II/Basel-II-Glossary/Loss-Given-Default.htm)

@@ -152,3 +152,48 @@ Example on Kaggle by Louis Deconinck
 
   LGD estimation taken from
 -  (Basel II Glossary, 2013: https://web.archive.org/web/20130421005422/http://www.basel-ii-risk.com/Basel-II/Basel-II-Glossary/Loss-Given-Default.htm)
+
+## Instructions to Run the Notebooks
+
+### 1. Clone the Repository
+
+Download the repository to your local machine:
+git clone https://github.com/yourusername/loan-risk-analysis.git
+
+cd loan-risk-analysis
+### 2. Install Required Packages
+
+It is recommended to use a virtual environment.
+
+Create and activate a virtual environment (optional):
+python -m venv venv
+source venv/bin/activate
+
+On Windows use:
+venv\Scripts\activate
+
+Install the required dependencies:
+
+pip install -r Requirements.txt
+
+### 3. Launch Jupyter Notebook
+
+Start Jupyter Notebook:
+
+jupyter notebook
+
+Open and run the notebooks sequentially:
+
+1. **Notebook 1 – Exploratory Data Analysis  - data_quality_and_cleaning.ipynb**
+2. **Notebook 2 – Feature Engineering & Data Preparation - transformation_and_feature_selection.ipynb**
+3. **Notebook 3 – Predictive Modeling & Risk Assessment - modeling_and_risk_analysis.ipynb**
+
+Each notebook builds on the output of the previous one.
+
+### 5. Dataset
+
+The dataset is included in the `data` folder.
+
+Alternatively, it can be downloaded from:
+
+https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data

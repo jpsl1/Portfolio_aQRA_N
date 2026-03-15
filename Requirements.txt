@@ -1,0 +1,42 @@
+Packages used in Notebook 1
+
+import pandas as pd
+import missingno as msno
+import numpy as np
+from scipy.stats import pointbiserialr, chi2_contingency
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+Packages used in Notebook 2:
+
+import pandas as pd
+import numpy as np
+import scipy as sc
+from scipy.stats import pointbiserialr, chi2_contingency
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import train_test_split
+
+import xgboost as xgb
+from xgboost import plot_importance
+
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+Packages used in Notebook 3:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV, train_test_split, RandomizedSearchCV
+from sklearn.metrics import accuracy_score, confusion_matrix, roc_auc_score, classification_report, auc,roc_curve, f1_score
+
+from xgboost import XGBClassifier
+from xgboost import plot_importance
+
+
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)

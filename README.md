@@ -130,11 +130,11 @@ The dataset includes demographic and financial information, such as ApplicantInc
 
 # Limitations
 
-Dataset is small (614 observations), so results may not generalize broadly. Analysis identifies associations, not causal relationships. Some high-dimensional interactions may require larger datasets to validate.
+Dataset is small (614 observations), so results may not generalize broadly. Analysis identifies associations, not causal relationships. Some high-dimensional interactions may require larger datasets to validate. 
 
 # Intended Use
 
-This portfolio demonstrates quantitative risk analysis workflow: from cleaning and exploration, to feature engineering, predictive modeling, and PD-based risk assessment. It is suitable for showcasing skills relevant to a Junior Quantitative Risk Analyst role.
+Demonstrate a quantitative risk analysis workflow, from data cleaning and EDA, to feature engineering, predictive modeling, and PD-based risk assessment.
 
 # References used in portfolio
 

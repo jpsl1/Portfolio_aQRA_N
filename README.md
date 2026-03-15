@@ -18,23 +18,24 @@ The dataset includes demographic and financial information, such as ApplicantInc
 **Link to Raw Data**: https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data
 
 # Project Pipeline
-Raw Dataset (614 applications)
-        |
-Data Cleaning & Missing Value Handling
-        |
-Exploratory Data Analysis
-        |
-Feature Engineering & Transformation
-        |
-Train/Test Split
-        |
-Model Training (Logistic Regression, XGBoost)
-        |
-Hyperparameter Tuning
-        |
-Model Evaluation
-        |
-Credit Risk Assessment (PD & Risk Segmentation)
+
+- Raw Dataset (614 applications)
+  
+- Data Cleaning & Missing Value Handling
+        
+- Exploratory Data Analysis
+        
+- Feature Engineering & Transformation
+        
+- Train/Test Split
+        
+- Model Training (Logistic Regression, XGBoost)
+        
+- Hyperparameter Tuning
+        
+- Model Evaluation
+        
+- Credit Risk Assessment (PD & Risk Segmentation)
 
 # Methodology
 ## Notebook 1 – Exploratory Data Analysis (EDA)

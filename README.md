@@ -158,12 +158,11 @@ Example on Kaggle by Louis Deconinck
 ### 1. Clone the Repository
 
 Download the repository to your local machine:
-git clone https://github.com/yourusername/loan-risk-analysis.git
+git clone https://github.com/jpsl1/Portfolio_aQRA_N.git
 
 cd loan-risk-analysis
-### 2. Install Required Packages
 
-It is recommended to use a virtual environment.
+### 2. Install Required Packages
 
 Create and activate a virtual environment (optional):
 python -m venv venv
@@ -172,7 +171,7 @@ source venv/bin/activate
 On Windows use:
 venv\Scripts\activate
 
-Install the required dependencies:
+### Install the required dependencies:
 
 pip install -r Requirements.txt
 

@@ -88,23 +88,25 @@ Credit Risk Assessment (PD & Risk Segmentation)
 - PD-based categories: Low, Medium, High Risk.
 
 - Confusion matrix indicates most safe applicants approved, high-risk applicants flagged or rejected.
-**Low Risk**
-- Number of Applicants: 97
-- Average PD (%): 3.9
-- Total Loan Amount: 13,548
-- Total Expected Loss: 287
 
-**Medium Risk**
-- Number of Applicants: 12
-- Average PD (%): 30.6
-- Total Loan Amount: 1,617
-- Total Expected Loss: 225
+**Number of Applicant per Risk Category, Average PD of Applicants, Total Loan amount, and Expected Loss predicted by build model:**
+- **Low Risk**
+   - Number of Applicants: 97
+   - Average PD (%): 3.9
+   - Total Loan Amount: 13,548
+   - Total Expected Loss: 287
 
-**High Risk**
-- Number of Applicants: 14
-- Average PD (%): 62.9
-- Total Loan Amount: 2,384
-- Total Expected Loss: 739             
+- **Medium Risk**
+   - Number of Applicants: 12
+   - Average PD (%): 30.6
+   - Total Loan Amount: 1,617
+   - Total Expected Loss: 225
+
+- **High Risk**
+   - Number of Applicants: 14
+   - Average PD (%): 62.9
+   - Total Loan Amount: 2,384
+   - Total Expected Loss: 739             
 
 **Key Takeaways:**
 

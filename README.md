@@ -1,52 +1,123 @@
-# Project Overview - Loan Risk Analysis Portfolio for Nordea – Quantitative Risk Analyst
+# Loan Risk Analysis Portfolio – Quantitative Risk Analyst (Nordea)
+# Project Overview
 
-Project overview
-Dataset description
-Methodology
-Model results
-Key insights
-How to run the project
+This project analyzes a dataset of 614 loan applications to understand factors influencing loan approval and develop a framework for credit risk assessment. The analysis covers:
 
-**Objective:**
+- Data Cleaning and EDA
 
-The purpose of this project is to analyze a dataset of loan applicants to understand the factors influencing loan approval and to develop a framework for assessing credit risk. <br>
+- Feature Engineering and Transformation
 
-In **Notebook 1**, the focus is on exploring the data and visualizing its distributions. <br>
-In **Notebook 2**, the focus is on basic data preparation for model building. <br>
-In **Notebook 3**, the focus is on predictive models and evaluate risk of a loaner. <br>
+- Predictive Modeling using Logistic Regression and XGBoost
 
-**Dataset:**
-The dataset contains 614 loan applications with features including ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, MaritalStatus, Gender, NumberOfDependents, Property_Area, and Loan_Status.
+# Objective:
+To explore borrower characteristics, identify key predictors of loan approval, and develop an interpretable model for estimating the probability of default (PD), supporting risk-based lending decisions.
 
-Link to raw data:  https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data
+# Dataset:
+The dataset includes demographic and financial information, such as ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, MaritalStatus, Gender, NumberOfDependents, Property_Area, and Loan_Status.
 
-### Approach:
+**Link to Raw Data**: https://www.kaggle.com/datasets/burak3ergun/loan-data-set/data
 
-The project is divided into three stages:
+# Project Pipeline
+Raw Dataset (614 applications)
+        ↓
+Data Cleaning & Missing Value Handling
+        ↓
+Exploratory Data Analysis
+        ↓
+Feature Engineering & Transformation
+        ↓
+Train/Test Split
+        ↓
+Model Training (Logistic Regression, XGBoost)
+        ↓
+Hyperparameter Tuning
+        ↓
+Model Evaluation
+        ↓
+Credit Risk Assessment (PD & Risk Segmentation)
 
-**Exploratory Data Analysis (Notebook 1):** Inspect and clean the dataset, handle missing values, visualize distributions of categorical and numeric variables as  well as demonstrate the need for derived features, and explore relationships between features and loan approval using boxplots, histograms, and countplots.
+# Methodology
+## Notebook 1 – Exploratory Data Analysis (EDA)
 
-**Feature Engineering and Preparation (Notebook 2):** Transform numeric features, create derived features such as Total_Income, DTI, and Debt_Ratio, and prepare the dataset for modeling by encoding categorical variables and selecting features.
+**Data Cleaning:** Imputed missing values (median/mode), analyzed missingness (mostly MCAR).
 
-**Modeling and Risk Assessment (Notebook 3):** Apply Logistic Regression and XGBoost models to predict loan approval, compare model performance, and evaluate predicted probabilities to estimate credit risk.
+**Feature Engineering:** Created derived features:
 
-### Key Considerations:
+- Total_Income = Applicant + Coapplicant income
 
-- Outliers were inspected using histograms and boxplots; winsorization and log transformations were used selectively to preserve realistic applicant behavior.
-- Derived financial measures were included to capture household repayment capacity.
-- Most important features for predicting loan approval are Loan_History and Property_Area_Semiurban
+- DTI (Debt-to-Income ratio)
 
-**Outcomes:**
+- Debt_Ratio (Loan-to-Income ratio)
 
-- Notebook 1: Understand the dataset and identify variables that influence loan approval.
-     - Visualized Credit_History as the most indicatory feature in loan approval. Demonstrated the need for numeric feature winzarisation and logistic transformation.
-- Notebook 2: Prepare features and the dataset for modeling to maximize predictive power.
-     - Found key features for model.
-- Notebook 3: Build and evaluate predictive models for loan approval and perform risk estimation.
-     - The logistic regression / XGBoost model achieved an AUC of 0.85, indicating strong ability to distinguish between approved and rejected loan applicants.
+- Has_Coapplicant (binary indicator)
 
-**Intended Use:**
-This analysis provides a structured framework for evaluating loan applications and identifying key factors affecting credit risk. It demonstrates a combination of statistical analysis, feature engineering, and predictive modeling relevant for the role of a Quantitative Risk Analyst.
+**Outlier & Skew Handling:** Winsorization and log transformations applied to numeric variables.
 
-***Project Limitation:***
-Due to the relatively small dataset (614 observations), results should be interpreted with caution. The analysis identifies patterns and associations within the data but does not imply causal relationships or guarantee generalization beyond this dataset.
+**Insights:**
+
+- Credit_History is the most predictive variable for loan approval.
+
+- Several numeric features were skewed but are now suitable for modeling.
+
+## Notebook 2 – Feature Engineering & Data Preparation
+
+**Data Split:** 80% training, 20% testing.
+
+**Feature Encoding:** One-hot encoding for categorical variables.
+
+**Model Insights (preliminary):**
+
+- Logistic Regression highlighted Credit_History, Has_Coapplicant, and financial ratios.
+
+- XGBoost identified Credit_History, Education, Property_Area_Semiurban, and Loan_Amount_Term as key predictors.
+
+- Feature Retention Strategy: All features retained to allow interaction effects in modeling.
+
+## Notebook 3 – Predictive Modeling & Risk Assessment
+
+**Models:** Logistic Regression and XGBoost, with and without hyperparameter tuning.
+
+**Performance:**
+
+- Logistic Regression (tuned) achieved AUC ≈ 0.85; interpretable and suitable for risk assessment.
+
+- XGBoost performed robustly but is less interpretable.
+
+**Risk Segmentation:**
+
+- PD-based categories: Low, Medium, High Risk.
+
+- Confusion matrix indicates most safe applicants approved, high-risk applicants flagged or rejected.
+**| Risk Category | Number of Applicant | Average PD | Total Loan Amouny | Total Expected Loss |**
+|-------------------|---------------|----------------|-----------|-----------|-----------|
+| Low Risk     | 97 | 3.9 | 13548 | 287 |
+| Medium Risk   | 12 | 30.6 | 1617 | 225 |
+| High Risk   | 14 | 62.9 | 2384 | 739 |
+
+**Key Takeaways:**
+
+- Preprocessing, feature engineering, and tuning improve model stability.
+
+- Credit_History, financial ratios, and coapplicant presence are strong predictors.
+
+- Logistic Regression offers a transparent, actionable framework for credit risk decisions.
+
+**Key Insights**
+
+- Borrower financial capacity and credit history are the strongest predictors of loan approval.
+
+- Derived ratios like DTI and Debt_Ratio provide meaningful risk signals.
+
+- Preprocessing improves interpretability and model performance for linear models.
+
+- Tree-based models (XGBoost) capture complex patterns with minimal preprocessing.
+
+- PD-based segmentation supports risk-aware lending strategies.
+
+# Limitations
+
+Dataset is small (614 observations), so results may not generalize broadly. Analysis identifies associations, not causal relationships. Some high-dimensional interactions may require larger datasets to validate.
+
+# Intended Use
+
+This portfolio demonstrates quantitative risk analysis workflow: from cleaning and exploration, to feature engineering, predictive modeling, and PD-based risk assessment. It is suitable for showcasing skills relevant to a Junior Quantitative Risk Analyst role.
